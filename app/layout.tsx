@@ -4,6 +4,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -12,6 +13,11 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 })
 
+
+export const metadata: Metadata = {
+  title: 'Digitech Solutions PMS',
+  description: 'Manage employee attendance records',
+}
 export default function RootLayout({
   children,
 }: Readonly<{

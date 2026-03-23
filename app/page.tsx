@@ -1,5 +1,5 @@
 import { LoginForm } from "@/components/auth/login-form"
-import { GalleryVerticalEndIcon } from "lucide-react"
+import { CommandIcon} from "lucide-react"
 import Image from "next/image"
 
 export default function LoginPage() {
@@ -7,9 +7,9 @@ export default function LoginPage() {
     <div className="grid min-h-svh lg:grid-cols-2">
       <div className="flex flex-col gap-4 p-6 md:p-10">
         <div className="flex justify-center gap-2 md:justify-start">
-          <a href="#" className="flex items-center gap-2 font-medium">
+          <a href="/" className="flex items-center gap-2 font-bold">
             <div className="flex size-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
-              <GalleryVerticalEndIcon className="size-4" />
+             <CommandIcon className="size-5!" />
             </div>
             Digitech Solutions.
           </a>
@@ -21,11 +21,12 @@ export default function LoginPage() {
         </div>
       </div>
       <div className="relative hidden bg-muted lg:block">
-        {/* <Image
-          // src="/placeholder.svg"
+        <Image
+          src="/profile.png"
           alt="Image"
+          fill
           className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
-        /> */}
+        />
       </div>
     </div>
   )

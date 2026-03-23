@@ -76,7 +76,7 @@ export function LoginForm({
             id="email"
             name="email"
             type="email"
-            placeholder="m@example.com"
+            // placeholder="m@example.com"
             required
             className="bg-background"
           />
